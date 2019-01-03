@@ -1,0 +1,31 @@
+﻿body {
+}
+
+#image{
+    height:32px;
+    width:32px;
+
+    background: url(/img/Evil2.png) 0px 0px;
+}
+
+html, body {
+    background: #eee;
+    font-size: 15px;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+canvas {
+    /*background: #fff;*/
+}
+
+.controls {
+    text-align: right;
+    color: #aaa;
+}

@@ -1,0 +1,30 @@
+﻿@model MahekarusProfile.Models.Access_Modifier.WriteToScreen
+<!DOCTYPE html>
+@{
+    var TextAreaBody = "";
+    //This is MethodOverriding
+    if (Model != null)
+    {
+
+        TextAreaBody = Model.TextAreaBody;
+        //TextAreaBody = TextAreaBody.Replace("\n", "[nl]");
+    }
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/AccessModifier/accessmodifierstyle.css" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <textarea class="myForm" id="myText" name="myText">@TextAreaBody</textarea>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -167,6 +167,7 @@
     <Compile Include="Controllers\AccessModifierController.cs" />
     <Compile Include="Controllers\Api\ProductsController.cs" />
     <Compile Include="Controllers\AppsController.cs" />
+    <Compile Include="Controllers\apps\GameDatasController.cs" />
     <Compile Include="Controllers\BinaryConverterController.cs" />
     <Compile Include="Controllers\DelegatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -179,6 +180,25 @@
     <Compile Include="Models\Access Modifier\Customers.cs" />
     <Compile Include="Models\Access Modifier\GoldCustomer.cs" />
     <Compile Include="Models\Access Modifier\RateCalculator.cs" />
+    <Compile Include="Models\CRUD\DataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CRUD\DataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CRUD\DataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CRUD\GameData.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CRUD\GamesData.cs" />
     <Compile Include="Models\WebAPI\Product.cs" />
     <Compile Include="Models\WriteToScreen.cs" />
     <Compile Include="Models\clsConvertToBin.cs" />
@@ -241,6 +261,16 @@
     <Content Include="img\Folder3.jpg" />
     <Content Include="img\MyPhoto.png" />
     <Content Include="img\MyPhoto2.png" />
+    <Content Include="Models\CRUD\DataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataModel.edmx</DependentUpon>
+      <LastGenOutput>DataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CRUD\DataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataModel.edmx</DependentUpon>
+      <LastGenOutput>DataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\Apps\Apps.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -268,6 +298,13 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <EntityDeploy Include="Models\CRUD\DataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CRUD\DataModel.edmx.diagram">
+      <DependentUpon>DataModel.edmx</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\MahekarusProfile - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Game\game-object.js" />
@@ -323,16 +360,16 @@
     <Content Include="Views\Apps\Index.cshtml" />
     <Content Include="Views\BinaryConverter\Index.cshtml" />
     <Content Include="Views\Home\View.cshtml" />
-    <Content Include="Views\GameDatas\Create.cshtml" />
-    <Content Include="Views\GameDatas\Delete.cshtml" />
-    <Content Include="Views\GameDatas\Details.cshtml" />
-    <Content Include="Views\GameDatas\Edit.cshtml" />
-    <Content Include="Views\GameDatas\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Delegates\Index.cshtml" />
     <Content Include="Views\AccessModifier\Index.cshtml" />
     <Content Include="Views\MethodOverriding\Index.cshtml" />
     <Content Include="Views\WebAPI\Index.cshtml" />
+    <Content Include="Views\GameDatas\Create.cshtml" />
+    <Content Include="Views\GameDatas\Delete.cshtml" />
+    <Content Include="Views\GameDatas\Details.cshtml" />
+    <Content Include="Views\GameDatas\Edit.cshtml" />
+    <Content Include="Views\GameDatas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

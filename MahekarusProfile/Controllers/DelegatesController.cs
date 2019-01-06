@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MahekarusProfile.Models;
+using MahekarusProfile.Models.Access_Modifier;
 using MahekarusProfile.Models.Delegates;
 
 namespace MahekarusProfile.Controllers
@@ -12,9 +14,10 @@ namespace MahekarusProfile.Controllers
         // GET: Delegates
         public ActionResult Index()
         {
-            var program = new Program();
-
-            return View(program);
+            //var program = new Program();
+            WriteToScreen wts = new WriteToScreen();
+            wts.Delegates();
+            return View(wts);
         }
     }
 }

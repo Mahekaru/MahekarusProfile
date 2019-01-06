@@ -7,6 +7,7 @@ namespace MahekarusProfile.Models.Delegates
 {
     public class Photo
     {
+
         public static Photo Load(string Path)
         {
             var p = new Photo();

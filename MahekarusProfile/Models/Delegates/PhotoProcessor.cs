@@ -13,7 +13,9 @@ namespace MahekarusProfile.Models.Delegates
         public void Process(string path,PhotoFilterHandler filterHander)
         {
             var photo = Photo.Load(path);
+            
             filterHander(photo);
+        
         }
     }
 }

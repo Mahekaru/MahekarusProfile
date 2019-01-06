@@ -11,15 +11,15 @@ namespace MahekarusProfile.Models.Delegates
 
         public static void Main(string[] args)
         {
-            var processor = new PhotoProcessor();
-            var filters = new PhotoFilters();
+            //var processor = new PhotoProcessor();
+            //var filters = new PhotoFilters();
             
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.AppllyBrightness;
-            filterHandler += filters.ApplyContrast;
-            filterHandler += RemoveRedEyeFilter;
+            //PhotoProcessor.PhotoFilterHandler filterHandler = filters.AppllyBrightness;
+            //filterHandler += filters.ApplyContrast;
+            //filterHandler += RemoveRedEyeFilter;
 
             
-            processor.Process("photo.jpg",filterHandler);
+            //processor.Process("photo.jpg",filterHandler);
         }
 
         static void RemoveRedEyeFilter(Photo photo)

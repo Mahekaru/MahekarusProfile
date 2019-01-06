@@ -1,7 +1,16 @@
-﻿@model MahekarusProfile.Models.Delegates.Program
+﻿@model MahekarusProfile.Models.Access_Modifier.WriteToScreen
 
 <!DOCTYPE html>
+@{
+    var TextAreaBody = "";
+    //This is MethodOverriding
+    if (Model != null)
+    {
 
+        TextAreaBody = Model.TextAreaBody;
+        //TextAreaBody = TextAreaBody.Replace("\n", "[nl]");
+    }
+}
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -13,12 +22,12 @@
             <div class="col-12 text-center">
                 <div class="border">
                     <h2>Welcome To Delegates</h2>
-                </div>                
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-
+                <textarea class="myForm" id="myText" name="myText">@TextAreaBody</textarea>
             </div>
         </div>
     </div>

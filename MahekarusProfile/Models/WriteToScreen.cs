@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MahekarusProfile.Models.Method_Overriding;
+using MahekarusProfile.Models.Delegates;
 using System.Linq;
 using System.Web;
 
@@ -9,6 +10,7 @@ namespace MahekarusProfile.Models.Access_Modifier
     public class WriteToScreen
     {
         public string TextAreaBody { get; set; }
+        public string TAB;
         private string _NewLine = "\n";
 
         //&#13;&#10;
@@ -46,6 +48,26 @@ namespace MahekarusProfile.Models.Access_Modifier
             TextAreaBody = canvas.DrawShapes(shapes,TextAreaBody);
 
         
+        }
+
+        public string[] Filter { get; set; }
+        public void Delegates()
+        {
+            var processor = new PhotoProcessor();
+            var filters = new PhotoFilters();
+
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.AppllyBrightness;
+            filterHandler += filters.ApplyContrast;
+            filterHandler += RemoveRedEyeFilter;
+
+            TAB = "";
+            processor.Process("photo.jpg", filterHandler,ref TAB);
+        }
+
+        static void RemoveRedEyeFilter(Photo photo)
+        {
+            photo.TAB += "Apply Remove RedEye";
+            //Console.WriteLine("Apply RemoveRedEye");
         }
     }
 }

@@ -12,7 +12,7 @@ namespace MahekarusProfile.Models.Delegates
         public static Photo Load(string Path)
         {
             var p = new Photo();
-            p.PhotoMessage = "Creating and returning Photo Class";
+            p.PhotoMessage = "Creating and returning Photo Class \n";
             return p;
         }
 

@@ -13,8 +13,9 @@ namespace MahekarusProfile.Models.Delegates
         public string Process(string path,PhotoFilterHandler filterHander,string TBH)
         {
             var photo = Photo.Load(path);
-            photo.PhotoMessage += "Photo Class Hit";
-            photo.PhotoMessage += "Photo Class Contains a Delegate Call PhotoFilterHandler";
+            photo.PhotoMessage += "Photo Class Hit \n";
+            photo.PhotoMessage += "Photo Class Contains a Delegate Call PhotoFilterHandler \n";
+            photo.PhotoMessage += "Processing Filters Using Delegate Now \n";
             filterHander(photo);
             TBH += photo.PhotoMessage;
 

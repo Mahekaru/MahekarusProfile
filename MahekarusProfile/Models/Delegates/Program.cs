@@ -24,7 +24,7 @@ namespace MahekarusProfile.Models.Delegates
 
         static void RemoveRedEyeFilter(Photo photo)
         {
-            Console.WriteLine("Apply RemoveRedEye");
+            Console.WriteLine("Apply RemoveRedEye \n");
         }
     }
 }

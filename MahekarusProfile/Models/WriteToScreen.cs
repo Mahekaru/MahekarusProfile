@@ -56,12 +56,14 @@ namespace MahekarusProfile.Models.Access_Modifier
             var processor = new PhotoProcessor();
             var filters = new PhotoFilters();
             var p = new Photo();
-            p.PhotoMessage = "Applying Filters";
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyContrast;
+            //p.PhotoMessage = "Applying Filters";
+            //p.PhotoMessage += _NewLine;
+            TextAreaBody = "Adding Filters to filterHandler Delegate \n";
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.AppllyBrightness;
             filterHandler += filters.ApplyContrast;
             filterHandler += RemoveRedEyeFilter;
-            TextAreaBody = "";
-
+            TextAreaBody += p.PhotoMessage;
+            TextAreaBody += "Running Photo Processor to process filters \n";
             TextAreaBody = processor.Process("photo.jpg", filterHandler, TextAreaBody);
         }
 

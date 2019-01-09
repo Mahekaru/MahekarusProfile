@@ -239,6 +239,7 @@
     </Content>
     <Content Include="img\AccessModifier.png" />
     <Content Include="img\API.png" />
+    <Content Include="img\cloneimg2.jpg" />
     <Content Include="img\Desktop-Photo.jpg" />
     <Content Include="img\Entity Framework.png" />
     <Content Include="img\Games-Photo.jpg" />

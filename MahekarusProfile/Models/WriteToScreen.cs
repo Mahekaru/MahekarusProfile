@@ -50,23 +50,25 @@ namespace MahekarusProfile.Models.Access_Modifier
         
         }
 
-        public string[] Filter { get; set; }
+        //public string[] Filter { get; set; }
         public void Delegates()
         {
             var processor = new PhotoProcessor();
             var filters = new PhotoFilters();
-
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.AppllyBrightness;
+            var p = new Photo();
+            p.PhotoMessage = "Applying Filters";
+            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyContrast;
             filterHandler += filters.ApplyContrast;
             filterHandler += RemoveRedEyeFilter;
+            TextAreaBody = "";
 
-            TAB = "";
-            processor.Process("photo.jpg", filterHandler,ref TAB);
+            TextAreaBody = processor.Process("photo.jpg", filterHandler, TextAreaBody);
         }
 
         static void RemoveRedEyeFilter(Photo photo)
         {
-            photo.TAB += "Apply Remove RedEye";
+            photo.PhotoMessage += "Apply Remove RedEye";
+            //photo.TAB += "Apply Remove RedEye";
             //Console.WriteLine("Apply RemoveRedEye");
         }
     }

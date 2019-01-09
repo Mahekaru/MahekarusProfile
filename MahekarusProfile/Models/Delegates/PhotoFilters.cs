@@ -7,25 +7,28 @@ namespace MahekarusProfile.Models.Delegates
 {
     public class PhotoFilters
     {
-        public string AppllyBrightness(Photo photo)
+        public void AppllyBrightness(ref Photo photo)
         {
             //photo.TAB += "Apply Brightness";
-            return "Apply Brightness";
+            photo.PhotoMessage +=  "Apply Brightness";
             //textAreaBody += "Apply Brightness";
             //Console.WriteLine("Apply Brightness");
         }
 
-        public string ApplyContrast(Photo photo)
+        public void ApplyContrast(Photo photo)
         {
             //photo.TAB += "Apply Contrast";
-            return "Apply Contrast";
+
+            photo.PhotoMessage += "Apply Contrast";
+            //return "Apply Contrast";
             // textAreaBody += "Apply Contrast";
             //Console.WriteLine("Apply contrast");
         }
 
-        public string Resize(Photo photo)
+        public void Resize(Photo photo)
         {
-            return "Resize Photo";
+            photo.PhotoMessage += "Resize Photo";
+            //return "Resize Photo";
             //photo.TAB += "Resize Photo";
             //textAreaBody += "Resize Photo";
             //Console.WriteLine("Resize Photo");

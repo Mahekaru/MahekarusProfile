@@ -1,16 +1,16 @@
 ﻿addSkill("Visual Studio", "Expert +10", "100");
 addSkill("Application Development", "Expert +10", "100");
 addSkill("Automation", "Expert +10", "100");
-addSkill("VB", "Intermediate +8.5", "86");
-addSkill("C#", "Intermediate +8.5", "84");
-addSkill("SQL", "Intermediate +8.5", "80");
-addSkill("OOP", "Intermediate +8", "80");
-addSkill("MVC", "Novice +7", "70");
+addSkill("VB", "Intermediate +8.6", "86");
+addSkill("C#", "Intermediate +8.5", "85");
+addSkill("SQL", "Intermediate +8.4", "84");
+addSkill("OOP", "Intermediate +8.3", "83");
+addSkill("MVC", "Intermediate +8", "80");
 addSkill("MEAN Stack", "Novice +6", "60");
 addSkill("Angular", "Novice +5.8", "58");
 addSkill("NPM", "Novice +4.7", "47");
 addSkill("Node.js", "Novice 4.3", "43");
-addSkill("React", "Beginner + 1.5", "15");
+addSkill("React", "Learning + 1.5", "15");
 
 //addSkill("React", "Beginner", "25");
 

@@ -1,7 +1,6 @@
-﻿
+﻿@model List<MahekarusProfile.Models.Apps.App>
+
 <!DOCTYPE html>
-
-
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>My Web Apps</title>
@@ -18,80 +17,33 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="appContainer">
         <!-- Example row of columns -->
+       
         <div class="row" id="app-Group">
-            <div class="col-sm-4 col-md-4 apps">
-                <h2>Binary Converter 2.0</h2>
+            @foreach (MahekarusProfile.Models.Apps.App obj in Model)
+            {
+                <div class="col-sm-4 col-md-4 apps">
+                <h2>@obj.Title</h2>
 
-                <p>Originally a Desktop application. I liked it a lot, so I converted it into a web app.</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/BinaryConverter20.png" />
-                <a href="https://github.com/MichaelEJennings/Binary-Converter-2.0-Web" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "BinaryConverter", null, new { @class = "btn btn-secondary" })</p>
+                <p>@obj.Description</p>
+                <img style="height:153px;width:350px" class="img-fluid" src="~/img/@obj.Picture" />
+                @{
+                    if (obj.GitHubLink != "")
+                    {
+                        <a href=@obj.GitHubLink target="_blank">github Link</a>
+                    }
 
-            </div>
+                    if (obj.Controller != "")
+                    {
+                        <p>@Html.ActionLink(@obj.DALText, @obj.Action, @obj.Controller, null, new { @class = "btn btn-secondary" })</p>
+                    }
+                }
 
-            <div class="col-sm-4 col-md-4">
-                <h2>Basic CRUD App</h2>
-                <p>An Web App to showcase CRUD using Entity Framework</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/Entity Framework.png" />
-                <a href="https://github.com/MichaelEJennings/Basic-CRUD" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "GameDatas", null, new { @class = "btn btn-secondary" })</p>
 
-            </div>
-            @*<div class="col-md-4">
-            <h2>Delegates App</h2>
-            <p>Desktop app converted over to Web, to showcase using delegates.</p>
-            <img style="height:153px;width:350px" class="fitImg" src="~/img/Entity Framework.png" />
-            <p>Github Link Pending...</p>
-            <p>@Html.ActionLink("Open App", "Index", "Delegates", null, new { @class = "btn btn-secondary" })</p>
+                </div>
+            }
 
-        </div>*@
-            <div class="col-sm-4 col-md-4">
-                <h2>Access Modifiers</h2>
-                <p>Console app which uses classes which have access modifiers such as private, public, and internal.</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/AccessModifier.png" />
-                <a href="https://github.com/MichaelEJennings/Access-Modifiers" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "AccessModifier", null, new { @class = "btn btn-secondary" })</p>
-
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <h2>Method Overriding</h2>
-                <p>Console app which uses classes which have virtual and override methods</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/MethodOverriding.jpg" />
-                <a href="https://github.com/MichaelEJennings/Method-Overriding" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "MethodOverriding", null, new { @class = "btn btn-secondary" })</p>
-
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <h2>API Project</h2>
-                <p>Simple project to showcase API</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/API.png" />
-                <a href="https://github.com/Mahekaru/Web-API-Project" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "WebAPI", null, new { @class = "btn btn-secondary" })</p>
-
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <h2>Binary Converter API</h2>
-                <p>Coming Soon</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/API.png" />
-                @*<a href="https://github.com/Mahekaru/Web-API-Project" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "WebAPI", null, new { @class = "btn btn-secondary" })</p>*@
-
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <h2>Flappy Bird Clone</h2>
-                <p>Coming Soon!</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/API.png" />
-                @*<a href="https://github.com/Mahekaru/Web-API-Project" target="_blank">github Link</a>
-                <p>@Html.ActionLink("Open App", "Index", "WebAPI", null, new { @class = "btn btn-secondary" })</p>*@
-
-            </div>
-            <div class="col-sm-4 col-md-4">
-                @*<h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>*@
-            </div>
         </div>
 
         <hr>

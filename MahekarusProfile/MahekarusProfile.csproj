@@ -180,6 +180,8 @@
     <Compile Include="Models\Access Modifier\Customers.cs" />
     <Compile Include="Models\Access Modifier\GoldCustomer.cs" />
     <Compile Include="Models\Access Modifier\RateCalculator.cs" />
+    <Compile Include="Models\Apps\App.cs" />
+    <Compile Include="Models\Apps\DAL.cs" />
     <Compile Include="Models\CRUD\DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

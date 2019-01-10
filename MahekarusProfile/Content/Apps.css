@@ -14,4 +14,24 @@
     width: 100%;
 }
 
+div.apps{
+    width:380px;
+    height:341px;
+}
+
+div.title{
+    position:absolute;
+    top:0;
+}
+
+div.desc{
+    position:absolute;
+    top:50px;
+}
+
+div.img{
+    position:absolute;
+    top:60px;
+}
+
 

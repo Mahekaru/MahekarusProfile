@@ -23,25 +23,41 @@
         <div class="row" id="app-Group">
             @foreach (MahekarusProfile.Models.Apps.App obj in Model)
             {
-                <div class="col-sm-4 col-md-4 apps">
-                <h2>@obj.Title</h2>
-
-                <p>@obj.Description</p>
-                <img style="height:153px;width:350px" class="img-fluid" src="~/img/@obj.Picture" />
-                @{
-                    if (obj.GitHubLink != "")
-                    {
-                        <a href=@obj.GitHubLink target="_blank">github Link</a>
-                    }
-
-                    if (obj.Controller != "")
-                    {
-                        <p>@Html.ActionLink(@obj.DALText, @obj.Action, @obj.Controller, null, new { @class = "btn btn-secondary" })</p>
-                    }
-                }
-
-
+            <div class="col-sm-4 col-md-4 apps">
+                <div class="row">
+                    <div class="col-12">
+                        <div><h2>@obj.Title</h2></div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-12" style="height:50px">
+                        <div><p>@obj.Description</p></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div ><img style="height:153px;width:350px" class="img-fluid" src="~/img/@obj.Picture" /></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        @{
+                            if (obj.GitHubLink != "")
+                            {
+                                <a style="margin:auto;" href=@obj.GitHubLink target="_blank">github Link</a>
+                            }
+
+                            if (obj.Controller != "")
+                            {
+                                <p>@Html.ActionLink(@obj.DALText, @obj.Action, @obj.Controller, null, new { @class = "btn btn-secondary" })</p>
+                            }
+                        }
+                    </div>
+                </div>
+                
+
+
+            </div>
             }
 
         </div>

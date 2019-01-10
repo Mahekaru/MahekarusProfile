@@ -5,7 +5,7 @@ addSkill("VB", "Intermediate +8.6", "86");
 addSkill("C#", "Intermediate +8.5", "85");
 addSkill("SQL", "Intermediate +8.4", "84");
 addSkill("OOP", "Intermediate +8.3", "83");
-addSkill("MVC", "Intermediate +8", "80");
+addSkill("MVC", "Intermediate +8", "80" );
 addSkill("MEAN Stack", "Novice +6", "60");
 addSkill("Angular", "Novice +5.8", "58");
 addSkill("NPM", "Novice +4.7", "47");

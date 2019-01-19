@@ -19,7 +19,7 @@ namespace MahekarusProfile
 
             config.Routes.MapHttpRoute(
                 name: "BinaryAPI",
-                routeTemplate: "Binary/api/{controller}/{id}",
+                routeTemplate: "BinaryAPI/api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

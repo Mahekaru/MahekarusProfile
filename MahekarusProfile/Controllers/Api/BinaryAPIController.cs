@@ -8,7 +8,7 @@ using MahekarusProfile.Models;
 
 namespace MahekarusProfile.Controllers.Api
 {
-    public class BinaryController : ApiController
+    public class BinaryAPIController : ApiController
     {
         public string GetData(int id,[FromUri] string value)
         {

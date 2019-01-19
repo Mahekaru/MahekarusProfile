@@ -48,8 +48,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="btnPos">
-                            <button class="btns" name="submit" id="submit" value="to Binary">To Binary</button>
-                            <button class="btns" name="submit" id="submit" value="to Text">To Text</button>
+                            <input class="btns btnWidth" type="button" value="To Binary" onclick="toBinary();" />
+                            <input class="btns btnWidth" type="button" value="To Text" onclick="toText();" />
+
+                            @*<button class="btns" name="submit" id="submit" onclick="toBinary();" value="to Binary">To Binary</button>
+                            <button class="btns" name="submit" id="submit" onclick="toText();" value="to Text">To Text</button>*@
                         </div>
                     </div>
                 </div>
@@ -57,6 +60,6 @@
         </div>
     </div>
 
-    <script src="~/Scripts/binaryConverter.js"></script>
+    <script src="~/Scripts/apps/Binary.js"></script>
 </body>
 </html>

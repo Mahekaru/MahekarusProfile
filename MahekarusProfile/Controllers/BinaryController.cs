@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace MahekarusProfile.Controllers
 {
-    public class BinaryConverter2Controller : Controller
+    public class BinaryController : Controller
     {
-        // GET: BinaryConverter2
+        // GET: Binary
         public ActionResult Index()
         {
             return View();

@@ -169,7 +169,7 @@
     <Compile Include="Controllers\Api\ProductsController.cs" />
     <Compile Include="Controllers\AppsController.cs" />
     <Compile Include="Controllers\apps\GameDatasController.cs" />
-    <Compile Include="Controllers\BinaryConverter2Controller.cs" />
+    <Compile Include="Controllers\BinaryController.cs" />
     <Compile Include="Controllers\BinaryConverterController.cs" />
     <Compile Include="Controllers\DelegatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -377,7 +377,7 @@
     <Content Include="Views\GameDatas\Details.cshtml" />
     <Content Include="Views\GameDatas\Edit.cshtml" />
     <Content Include="Views\GameDatas\Index.cshtml" />
-    <Content Include="Views\BinaryConverter2\Index.cshtml" />
+    <Content Include="Views\Binary\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

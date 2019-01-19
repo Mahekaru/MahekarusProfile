@@ -16,6 +16,12 @@ namespace MahekarusProfile
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "BinaryAPI",
+                routeTemplate: "Binary/api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
         }
     }
 }

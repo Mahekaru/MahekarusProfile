@@ -1,0 +1,13 @@
+﻿.myForm {
+    width: 100%;
+    height: 170px;
+    max-width: none;
+    resize: None;
+    background: none;
+    /*border-style: none;*/
+    /*color: white;*/
+}
+
+.btnWidth{
+    width:49.59%;
+}

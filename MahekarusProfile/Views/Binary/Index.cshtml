@@ -1,28 +1,40 @@
-﻿<div class="row myBody">
-    <div class="col-md-6 tAreas">
-        <fieldset>
-            <legend style="width:30px;">Text</legend>
-            <textarea class="myForm" id="myText" name="myText"></textarea>
-        </fieldset>
+﻿<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Web Apps</title>
+    <link rel="stylesheet" href="~/Content/binaryapi/BinaryAPI.css" />
+
+</head>
+<div class="container">
+    <div class="row myBody">
+        <div class="col-md-6 tAreas">
+            <fieldset>
+                <legend style="width:30px;">Text</legend>
+                <textarea class="myForm" id="myText" name="myText"></textarea>
+            </fieldset>
+        </div>
     </div>
 
-    <div class="col-md-6 tAreas">
-        <fieldset>
-            <legend style="width:45px;">Binary</legend>
-            <textarea class="myForm" id="myBinary" name="myBinary"></textarea>
-        </fieldset>
+    <div class="row">
+        <div class="col-md-6 tAreas">
+            <fieldset>
+                <legend style="width:45px;">Binary</legend>
+                <textarea class="myForm" id="myBinary" name="myBinary"></textarea>
+            </fieldset>
+            <div class="btnPos">
+                <input class="btnWidth" type="button" value="To Binary" onclick="toBinary();" />
+                <input class="btnWidth" type="button" value="To Text" onclick="toText();" />
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="btnPos">
-
-            <input type="button" value="To Binary" onclick="toBinary();" />
-            <input type="button" value="To Text" onclick="toText();" />
+    <div class="row">
+        <div class="col-md-12">
+            
         </div>
     </div>
 </div>
+
 <script src="~/Scripts/Apps/Binary.js">
 
 </script>

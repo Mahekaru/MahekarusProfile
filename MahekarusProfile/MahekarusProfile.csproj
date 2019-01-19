@@ -222,6 +222,7 @@
   <ItemGroup>
     <Content Include="Content\AccessModifier\accessmodifierstyle.css" />
     <Content Include="Content\Apps.css" />
+    <Content Include="Content\BinaryAPI\BinaryAPI.css" />
     <Content Include="Content\BinaryConverter.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />

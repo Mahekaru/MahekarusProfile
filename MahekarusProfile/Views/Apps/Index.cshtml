@@ -42,9 +42,13 @@
                 <div class="row">
                     <div class="col-12">
                         @{
-                            if (obj.GitHubLink != "")
+                            if (obj.GitHubLink != "Disabled")
                             {
                                 <a style="margin:auto;" href=@obj.GitHubLink target="_blank">github Link</a>
+                            }
+                            else
+                            {
+                                <a style="margin:auto;" class="disabled">github Link</a>
                             }
 
                             if (obj.Controller != "")

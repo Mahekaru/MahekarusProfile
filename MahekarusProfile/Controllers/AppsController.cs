@@ -41,7 +41,7 @@ namespace MahekarusProfile.Controllers
                     Title = "Delegates App",
                     Picture = "Entity Framework.png",
                     Description = "A small Web App to showcase using delegates",
-                    GitHubLink = "",
+                    GitHubLink = "Disabled",
                     DALText = "Open App",
                     Action = "Index",
                     Controller = "Delegates"
@@ -61,7 +61,7 @@ namespace MahekarusProfile.Controllers
                     Title = "API Project",
                     Picture = "API.png",
                     Description = "Simple project to showcase API",
-                    GitHubLink = "https://github.com/Mahekaru/Web-API-Project",
+                    GitHubLink = "https://github.com/MichaelEJennings/Web-API-Project",
                     DALText = "Open App",
                     Action = "Index",
                     Controller = "WebAPI"
@@ -70,18 +70,18 @@ namespace MahekarusProfile.Controllers
                 {
                     Title = "Binary Converter API",
                     Picture = "API.png",
-                    Description = "Coming Soon!",
-                    GitHubLink = "",
+                    Description = "Is here! is accessed via Binary/api. Soon to be integrated into Binary Converter 2.0",
+                    GitHubLink = "https://github.com/MichaelEJennings/BinaryConverterAPI",
                     DALText = "Open App",
                     Action = "Index",
-                    Controller = ""
+                    Controller = "Binary"
                 },
                 new App
                 {
                     Title = "Flappy Bird Clone",
                     Picture = "cloneimg2.jpg",
                     Description = "Coming Soon!",
-                    GitHubLink = "",
+                    GitHubLink = "Disabled",
                     DALText = "Open App",
                     Action = "Index",
                     Controller = ""

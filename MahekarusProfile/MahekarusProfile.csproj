@@ -165,9 +165,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccessModifierController.cs" />
+    <Compile Include="Controllers\Api\BinaryController.cs" />
     <Compile Include="Controllers\Api\ProductsController.cs" />
     <Compile Include="Controllers\AppsController.cs" />
     <Compile Include="Controllers\apps\GameDatasController.cs" />
+    <Compile Include="Controllers\BinaryConverter2Controller.cs" />
     <Compile Include="Controllers\BinaryConverterController.cs" />
     <Compile Include="Controllers\DelegatesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -182,6 +184,7 @@
     <Compile Include="Models\Access Modifier\RateCalculator.cs" />
     <Compile Include="Models\Apps\App.cs" />
     <Compile Include="Models\Apps\DAL.cs" />
+    <Compile Include="Models\ConvertToBinary.cs" />
     <Compile Include="Models\CRUD\DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -275,6 +278,7 @@
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\Apps\Apps.js" />
+    <Content Include="Scripts\Apps\Binary.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -373,10 +377,12 @@
     <Content Include="Views\GameDatas\Details.cshtml" />
     <Content Include="Views\GameDatas\Edit.cshtml" />
     <Content Include="Views\GameDatas\Index.cshtml" />
+    <Content Include="Views\BinaryConverter2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="DAL\" />
+    <Folder Include="Scripts\Bind\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

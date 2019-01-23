@@ -10,6 +10,7 @@ namespace MahekarusProfile.Controllers.Api
 {
     public class BinaryAPIController : ApiController
     {
+        
         public string GetData(int id,[FromUri] string value)
         {
             string s = "";

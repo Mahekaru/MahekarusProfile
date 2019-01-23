@@ -1,21 +1,24 @@
 ﻿var uri = 'api/BinaryAPI';
 var bc = document.getElementById("bc");
+//var myAPI = window.location.hostname + "/api/BinaryAPI/1?value=";
 
 bc.addEventListener("animationend", setMinSize);
 
 function toBinary() {
-
+    
     var myText = $('#myText').val();
+    //$.getJSON(myAPI + myText)
+    //    .done(function (data) {$('#myBinary').val(data);});
+
     $.getJSON(uri + '/1?value=' + myText)
-        .done(function (data) {
-            $('#myBinary').val(data);
-        });
+        .done(function (data) {$('#myBinary').val(data);});
     clearTexts();
 }
 
 function toText() {
 
     var myText = $('#myBinary').val();
+
     $.getJSON(uri + '/2?value=' + myText)
         .done(function (data) {
             $('#myText').val(data);
